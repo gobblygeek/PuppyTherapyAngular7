@@ -1,0 +1,6 @@
+<input #searchBox id="search-box" placeholder="Search Breeds" [(ngModel)]="searchFilter" />
+<nav>
+	<a *ngFor="let breed of categories| filter:searchFilter" routerLink="/dog/{{breed.id}}" [class.active]="activeLink == breed.id" (click)="activeLink = breed.id">
+		{{breed.name}}
+	</a>
+</nav>

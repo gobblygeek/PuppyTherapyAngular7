@@ -1,0 +1,29 @@
+#search-box {
+  width: 98.5%;
+  height: 1.5em;
+  font-size: 1.5em;
+  margin-bottom:10px;
+}
+nav {
+  display: flex;
+  align-items: stretch;
+  width: 94vw;
+  overflow-x: auto;
+}
+nav a {
+  display: flex;
+  padding: 8px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: darkviolet;
+  border: 1px solid violet;
+  text-decoration: none;
+  align-items: center;
+}
+nav a:hover {
+  background-color: lightgoldenrodyellow
+}
+nav a.active {
+  color: black;
+  background-color: violet
+}
